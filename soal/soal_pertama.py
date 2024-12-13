@@ -31,7 +31,7 @@ class SolveItSoalPertama(unittest.TestCase):
     # A -> C = A x C
     hasil_A_ke_C_kali = perkalian(0, 0)
     # C -> D = C x D
-    hasil_A_ke_D_kali = perkalian(0, 0)
+    hasil_C_ke_D_kali = perkalian(0, 0)
     # B -> D = B - D
     hasil_B_ke_D_kurang = pengurangan(0, 0)
 
@@ -41,8 +41,8 @@ class SolveItSoalPertama(unittest.TestCase):
     def test_hasil_A_ke_C_kali(self):
         self.assertEqual(self.hasil_A_ke_C_kali, 21)
 
-    def test_hasil_A_ke_D_kali(self):
-        self.assertEqual(self.hasil_A_ke_D_kali, 9)
+    def test_hasil_C_ke_D_kali(self):
+        self.assertEqual(self.hasil_C_ke_D_kali, 9)
 
     def test_hasil_B_ke_D_kurang(self):
         self.assertEqual(self.hasil_B_ke_D_kurang, 5)
