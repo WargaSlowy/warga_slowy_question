@@ -5,15 +5,15 @@ on: [push, pull_request]
 jobs:
   build:
     runs-on: ubuntu-latest
-  steps:
-    - name: liat kodenya dulu
-      uses: actions/checkout@v4
+    steps:
+      - name: liat kodenya dulu
+        uses: actions/checkout@v4
 
-    - name: pake python
-      uses: actions/setup-python@v4
+      - name: pake python
+        uses: actions/setup-python@v4
 
-    - name: install dulu pytest yaa
-      run: python -m pip install pytest
+      - name: install dulu pytest yaa
+        run: python -m pip install pytest
 
-    - name: gass kita testing
-      run: python -m pytest main_test.py --verbose
+      - name: gass kita testing
+        run: python -m pytest main_test.py --verbose
